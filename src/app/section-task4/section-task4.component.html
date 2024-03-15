@@ -1,0 +1,13 @@
+<p>Task4</p>
+<div class="buttons">
+    <p>The condition is currently </p>
+    <button class="true" *ngIf="txtFalse">True</button>
+    <button class="false" *ngIf="!txtFalse">False</button>
+    <button class="toggle-true" (click)="colorChangeActive()" *ngIf="!isClick"> Toggle condition to false</button>
+    <button class="toggle-false" (click)="colorChangeActive()" *ngIf="isClick"> Toggle condition to true</button>
+</div>
+
+<p *ngIf="txtFalse" class="b-paragraph">(B) Althought the condition is true, this paragraph is display because
+    MyUnless is set to false</p>
+
+<p *ngIf="!txtFalse" class="a-paragraph"> (A) This paragraph is display because of condition is false</p>

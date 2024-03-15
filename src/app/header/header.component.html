@@ -1,0 +1,33 @@
+<p>Task1</p>
+
+<form>
+    <div>
+        <input type="radio" id="teapot" name="options" value="Teapot" (click)="showText('Teapot')">
+        <label for="option1">Teapot</label>
+    </div>
+    <div>
+        <input type="radio" id="lamp" name="options" value="Lamp" (click)="showText('Lamp')">
+        <label for="option2">Lamp</label>
+    </div>
+    <div>
+        <input type="radio" id="phone" name="options" value="Phone" (click)="showText('Phone')">
+        <label for="option3">Phone</label>
+    </div>
+    <div>
+        <input type="radio" id="television" name="options" value="Television" (click)="showText('Television')">
+        <label for="option4">Television</label>
+    </div>
+    <div>
+        <input type="radio" id="fishbowl" name="options" value="Fishbowl" (click)="showText('Fishbowl')">
+        <label for="option5">Fishbowl</label>
+    </div>
+</form>
+
+<!-- <div [ngSwitch]="text">
+    <p *ngSwitchCase="'Teapot'">Teapot</p>
+    <p *ngSwitchCase="'Lamp'">Lamp</p>
+    <p *ngSwitchCase="'Phone'">Phone</p>
+    <p *ngSwitchCase="'Television'">Television</p>
+    <p *ngSwitchCase="'Fishbowl'">Fishbowl</p>
+    <p *ngSwitchDefault>No match</p>
+</div> -->
